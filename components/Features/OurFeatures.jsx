@@ -21,82 +21,43 @@ const OurFeatures = () => {
       <div className="text-white p-10 relative z-20">
         <p className="text-slate-400">OUR FEATURES</p>
         <h1 className="text-right text-5xl">
-          SyncAI is an unified Social-Fi <br />
+          SyncAI is a unified Social-Fi <br />
           architecture with abstract programming <br />
           bringing a new age of{" "}
-          <span className=" bg-gradient-to-b from-[#F2f2f2] to-[#8f8f8f] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-b from-[#F2f2f2] to-[#8f8f8f] bg-clip-text text-transparent">
             user-centric experience
           </span>
         </h1>
       </div>
 
-      {/* features grid */}
-      <div className=" p-10">
-        <div className="grid grid-cols-5 grid-rows-12 gap-4">
-          <div className="col-span-3 row-span-4 relative">
-            <Image
-              src={Feature1}
-              alt="Sync ID Features"
-              width={800}
-              className="rounded-3xl border border-blue-300 object-cover grayscale-50"
-            ></Image>
-            <div className="absolute inset-0 bg-black opacity-60 h-[445px] rounded-3xl"></div>
-            <div className="text-white absolute left-0 bottom-0 p-10">
-              <p className="font-medium text-xl">
-                SyncID: Your Palm is Your Public Key
-              </p>
-              <p>
-                Sync ID is a sybil-resistant verifiable credential, powered by
-                palm signatures secured by zkp, which is directly linked to your
-                Cardano public key and Twitter.
-              </p>
-            </div>
-          </div>
+      {/* features flex container */}
+      <div className=" my-[10%]">
+            <div className=" w-[90%] mx-auto flex flex-col gap-3">
+                <div className=" flex flex-row gap-4 items-center">
 
-          <div className="col-span-2 row-span-4 col-start-4 ">
-            <Image
-              src={Feature2}
-              alt="Sync ID Features"
-              width={450}
-              className=" rounded-3xl border border-blue-300"
-            ></Image>
-          </div>
-          <div className="col-span-2 row-span-4 row-start-5 ">
-            <Image
-              src={Feature3}
-              alt="Sync ID Features"
-              width={500}
-              className=" rounded-3xl border border-blue-300"
-            ></Image>
-          </div>
-          <div className="col-span-3 row-span-4 col-start-3 row-start-5 ">
-            <Image
-              src={Feature4}
-              alt="Sync ID Features"
-              width={800}
-              height={500}
-              className=" rounded-3xl border border-blue-300"
-            ></Image>
-          </div>
-          <div className="col-span-3 row-span-4 row-start-9  rounded-xl">
-            <Image
-              src={Feature5}
-              alt="Sync ID Features"
-              width={800}
-              height={500}
-              className=" rounded-3xl border border-blue-300"
-            ></Image>
-          </div>
-          <div className="col-span-2 row-span-4 col-start-4 row-start-9 ">
-            <Image
-              src={Feature6}
-              alt="Sync ID Features"
-              width={450}
-              className=" rounded-3xl border border-blue-300"
-            ></Image>
-          </div>
+                    <div className=" relative ">
+                        <Image src={Feature1} alt="" className=" object-cover grayscale-[50%] border-[var(--primaryBlueText)] border-[2px] rounded-3xl" />
+
+                        <div className="absolute inset-0 bg-black opacity-50 z-10 rounded-3xl"></div>
+
+                        <div className="absolute bottom-3 left-0 right-0 p-5 z-20 text-white">
+                            <p className=" text-[25px]">SyncID: Your Palm is Your Public Key</p>
+                            <p className="text-[14px]">Sync ID is a sybil-resistant verifiable credential, powered by palm signatures</p>
+                            <p className="text-[14px]">secured by zkp, which is directly linked to your Cardano public key and Twitter.</p>
+                        </div>
+                    </div>
+                    <Image src={Feature2} alt="" />
+                </div>
+                <div className=" flex flex-row gap-4 items-center">
+                    <Image src={Feature3} alt="" className="border-[var(--primaryBlueText)] border-[1px] rounded-3xl" />
+                    <Image src={Feature4} alt="" className="border-[var(--primaryBlueText)] border-[1px] rounded-3xl" />
+                </div>
+                <div className=" flex flex-row gap-4 items-center">
+                    <Image src={Feature5} alt="" className="border-[var(--primaryBlueText)] border-[1px] rounded-3xl lg:h-[80vh] 2xl:h-[789px] w-[1247px]" />
+                    <Image src={Feature6} alt="" className="border-[var(--primaryBlueText)] border-[1px] rounded-3xl lg:h-[80vh] 2xl:h-[789px] w-[789px]" />
+                </div>
+            </div>
         </div>
-      </div>
     </div>
   );
 };

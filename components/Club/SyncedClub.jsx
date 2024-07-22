@@ -5,7 +5,7 @@ import { IoIosArrowForward as Arrow } from "react-icons/io";
 
 const SyncedClub = () => {
   return (
-    <div>
+    <div className=' py-10'>
         <div>
             <div className=' text-center'>
                 <p className=' text-slate-400 py-16'>Finetuned AI (LLM) Inference for counterparty <br /> discovery and execution</p>

@@ -19,7 +19,7 @@ const Team = () => {
 
         {/* member 1 */}
         <div className="relative group z-20">
-          <Image src={PaintImg} className="rounded-3xl" width={420}></Image>
+          <Image src={PaintImg} className="rounded-3xl" ></Image>
           <div className="absolute inset-0 bg-gradient-to-b from-[#D9D9D9] to-[#1E80D6] opacity-0 group-hover:opacity-80 transition-opacity duration-300 rounded-3xl"></div>
           <div className="absolute left-0 bottom-0 text-white p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <h1 className="text-3xl font-bold">SAM JEFFERY</h1>
@@ -40,7 +40,7 @@ const Team = () => {
 
         {/* member 2 */}
         <div className="relative group z-20">
-          <Image src={MenPaintImg} className="rounded-3xl" width={420}></Image>
+          <Image src={MenPaintImg} className="rounded-3xl"></Image>
           <div className="absolute inset-0 bg-gradient-to-b from-[#D9D9D9] to-[#1E80D6] opacity-0 group-hover:opacity-80 transition-opacity duration-300 rounded-3xl"></div>
           <div className="absolute left-0 bottom-0 text-white p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <h1 className="text-3xl font-bold">SAM JEFFERY</h1>
@@ -61,7 +61,7 @@ const Team = () => {
 
         {/* member 3 */}
         <div className="relative group z-20">
-          <Image src={PaintImg} className="rounded-3xl" width={420}></Image>
+          <Image src={PaintImg} className="rounded-3xl" ></Image>
           <div className="absolute inset-0 bg-gradient-to-b from-[#D9D9D9] to-[#1E80D6] opacity-0 group-hover:opacity-80 transition-opacity duration-300 rounded-3xl"></div>
           <div className="absolute left-0 bottom-0 text-white p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <h1 className="text-3xl font-bold">SAM JEFFERY</h1>
