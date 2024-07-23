@@ -1,21 +1,25 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import PaintImg from "@/assets/team/paint.jpeg";
 import MenPaintImg from "@/assets/team/menpaint.jpeg";
 import { FaXTwitter as XIcon, FaWhatsapp as Whatsapp } from "react-icons/fa6";
+import { useScrollRevealBottom, useScrollRevealLeft } from "../Reveal/ScrollReveal";
 
 const Team = () => {
+  useScrollRevealBottom();
+  useScrollRevealLeft();
   return (
     <div className=" relative">
       <div>
-        <h1 className=" text-center text-4xl text-white">The Team of SyncAI</h1>
+        <h1 className=" text-center text-4xl text-white reveal">The Team of SyncAI</h1>
       </div>
 
-      <div className="absolute -right-10 -bottom-32 z-10">
+      <div className="absolute -right-10 -bottom-32">
         <div className="bg-[radial-gradient(circle,_rgba(72,233,255,1)_0%,_rgba(26,86,238,1)_100%)] w-[500px] h-96 blur-3xl opacity-40"></div>
       </div>
 
-      <div className=" p-10 flex items-center justify-between gap-8">
+      <div className=" p-10 flex items-center justify-between gap-8 reveal-left">
 
         {/* member 1 */}
         <div className="relative group z-20">

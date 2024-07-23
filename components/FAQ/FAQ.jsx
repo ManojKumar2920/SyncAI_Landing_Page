@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { FaPlus as Plus, FaMinus as Minus } from "react-icons/fa6";
 import { GeneralFAQ, WebsiteFAQ } from "./FAQContent";
+import { useScrollRevealBottom } from "../Reveal/ScrollReveal";
 
 const FAQ = () => {
   const [selectedSection, setSelectedSection] = useState("General FAQ");
@@ -16,8 +17,10 @@ const FAQ = () => {
     ));
   };
 
+  useScrollRevealBottom();
+
   return (
-    <div className="z-20 flex flex-col items-center justify-center">
+    <div className="z-20 flex flex-col items-center justify-center reveal">
       <div className="pt-16">
         <h2 className="text-center text-4xl text-white">Frequently Asked Questions</h2>
       </div>

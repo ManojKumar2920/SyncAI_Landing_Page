@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 import NodeBud from "./NodeBud";
@@ -11,14 +12,16 @@ import {
 import VectorLogo from "@/assets/syncnode/vector.png";
 import PolygonLogo from "@/assets/syncnode/polygon.png";
 import FlowLines from "@/assets/syncnode/flowlines.svg";
-
 import { FaXTwitter as XIcon, FaWhatsapp as Whatsapp, FaTelegram as Telegram } from "react-icons/fa6";
+import { useScrollRevealBottom, useScrollRevealLeft } from "../Reveal/ScrollReveal";
 
 const SyncNode = () => {
+  useScrollRevealBottom();
+  useScrollRevealLeft();
   return (
     <div className="relative h-auto">
       <div>
-        <div className="pb-10">
+        <div className="pb-10 reveal">
           <p className="text-4xl text-center text-white">
             Sync Node <br />
             The building blocks <br />
@@ -28,7 +31,7 @@ const SyncNode = () => {
             </span>
           </p>
         </div>
-        <div className="relative">
+        <div className="relative reveal-left">
           <div className="">
             <NodeBud />
           </div>
