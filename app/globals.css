@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   background-color: #121212;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 

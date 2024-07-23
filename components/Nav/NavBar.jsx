@@ -10,6 +10,8 @@ const NavBar = () => {
 
   const pathname = usePathname();
 
+
+
   const getIconColor = (path) => pathname === path ? ' bg-gradient-to-b from-[#193558] to-[#41CEEC] bg-clip-text text-transparent font-extrabold' : 'text-white';
   return (
     <div>
@@ -20,7 +22,7 @@ const NavBar = () => {
             <div className=' flex items-center justify-between w-[35%] '>
                 <Link href={"/"} className={`${getIconColor('/')}`}>Home</Link>
                 <Link href={"/"}>About</Link>
-                <Link href={"#features"} className={`${getIconColor('/#features')}`} scroll>Features</Link>
+                <Link href={"#features"} scroll className={`${getIconColor('/#features')}`}>Features</Link>
                 <Link href={"/"}>Node</Link>
                 <Link href={"/"}>Contact</Link>
             </div>
