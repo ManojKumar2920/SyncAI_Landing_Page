@@ -26,3 +26,105 @@ body {
   border-radius: 10px;
 }
 
+
+/* Add these styles to your global CSS or a module-specific CSS file */
+
+/* Animation for blur drops */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for text */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for image */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animations */
+.fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+.slideIn {
+  animation: slideIn 1s ease-out;
+}
+
+.fadeInUp {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Add these styles to your global CSS or a module-specific CSS file */
+
+/* Slide in from left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide in from right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideDown{
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+/* Apply the animations */
+.slideInLeft {
+  animation: slideInLeft 1s ease-out;
+}
+
+.slideInRight {
+  animation: slideInRight 1s ease-out;
+}
+

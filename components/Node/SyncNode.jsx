@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React from "react";
 import Image from "next/image";
 import NodeBud from "./NodeBud";
@@ -11,17 +11,22 @@ import {
 } from "./NodeData";
 import VectorLogo from "@/assets/syncnode/vector.png";
 import PolygonLogo from "@/assets/syncnode/polygon.png";
-import FlowLines from "@/assets/syncnode/flowlines.svg";
 import { FaXTwitter as XIcon, FaWhatsapp as Whatsapp, FaTelegram as Telegram } from "react-icons/fa6";
-import { useScrollRevealBottom, useScrollRevealLeft } from "../Reveal/ScrollReveal";
+import { useInView } from 'react-intersection-observer';
 
 const SyncNode = () => {
-  useScrollRevealBottom();
-  useScrollRevealLeft();
+  // Observe the SyncNode container for triggering animations
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: '0px',
+    threshold: 0.1
+  });
+
   return (
-    <div className="relative h-auto">
-      <div>
-        <div className="pb-10 reveal">
+    <div className="relative h-auto" ref={ref}>
+      {/* Animation wrapper for text and relative div */}
+      <div className={`transition-opacity duration-1000 ${inView ? 'fadeIn' : 'opacity-0'}`}>
+        <div className="pb-10">
           <p className="text-4xl text-center text-white">
             Sync Node <br />
             The building blocks <br />
@@ -31,7 +36,7 @@ const SyncNode = () => {
             </span>
           </p>
         </div>
-        <div className="relative reveal-left">
+        <div className="relative">
           <div className="">
             <NodeBud />
           </div>
@@ -68,7 +73,7 @@ const SyncNode = () => {
                 <NodeBoxes layer={anchorIdentityLayer} />
               </div>
               <NodeBoxes layer={ingressionLayer} />
-              <div className=" w-[100px] flex flex-col gap-16 absolute top-[15%] left-[10%] z-0 2xl:hidden">
+              <div className="w-[100px] flex flex-col gap-16 absolute top-[15%] left-[10%] z-0 2xl:hidden">
                 <div>
                   <hr />
                   <hr />
@@ -81,12 +86,12 @@ const SyncNode = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col relative items-start z-10 justify-center 2xl:justify-around  h-auto ">
+            <div className="flex flex-col relative items-start z-10 justify-center 2xl:justify-around h-auto ">
               <NodeBoxes layer={dispatchLayer} />
               <NodeBoxes layer={queryingLayer} />
             </div>
           </div>
-          <div className="absolute -top-[10%]  z-0 left-0 w-full h-full flex justify-center items-center">
+          <div className="absolute -top-[10%] z-0 left-0 w-full h-full flex justify-center items-center">
             <div style={{ width: "100%", height: "100%" }}>
               <svg
                 version="1.1"
