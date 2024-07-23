@@ -65,7 +65,7 @@ const SyncNode = () => {
                 <NodeBoxes layer={anchorIdentityLayer} />
               </div>
               <NodeBoxes layer={ingressionLayer} />
-              <div className=" w-[100px] flex flex-col gap-16 absolute top-[15%] left-[10%] z-0">
+              <div className=" w-[100px] flex flex-col gap-16 absolute top-[15%] left-[10%] z-0 2xl:hidden">
                 <div>
                   <hr />
                   <hr />
