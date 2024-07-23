@@ -68,13 +68,13 @@ const Footer = () => {
       <div className=" z-10">
 
       <div className=" absolute right-0 -top-10">
-        <div className=" bg-gradient-to-b from-blue-600 to-blue-700 w-[400px] lg:w-[700px] opacity-70 h-96 blur-3xl "></div>
+        <div className=" bg-gradient-to-b from-blue-600 to-blue-700 w-[400px] 2xl:w-[1000px] opacity-70 h-96 blur-3xl "></div>
       </div>
       <div className=" absolute -top-10  left-[430px]">
-        <div className="bg-gradient-to-b from-blue-600 to-blue-700 w-[400px] lg:w-[700px] opacity-70 h-96 blur-3xl "></div>
+        <div className="bg-gradient-to-b from-blue-600 to-blue-700 w-[400px] 2xl:w-[1000px] opacity-70 h-96 blur-3xl "></div>
       </div>
       <div className=" absolute -top-10 ">
-        <div className="bg-gradient-to-b from-blue-600 to-blue-700 w-[400px] lg:w-[700px] opacity-70 h-96 blur-3xl "></div>
+        <div className="bg-gradient-to-b from-blue-600 to-blue-700 w-[400px] 2xl:w-[1000px] opacity-70 h-96 blur-3xl "></div>
       </div>
       </div>
 
