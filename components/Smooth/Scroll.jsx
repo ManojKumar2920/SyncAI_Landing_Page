@@ -4,7 +4,7 @@ import { ReactLenis } from 'lenis/react'
 function Scroll({children}) {
 
   return (
-    <ReactLenis root options={{lerp:0.08, smoothTouch:true}} >
+    <ReactLenis root options={{lerp:0.05, smoothTouch:true}} >
       { children }
     </ReactLenis>
   )
