@@ -16,13 +16,13 @@ const Hero = () => {
     <div className="flex flex-col items-center justify-center text-center relative">
       <div 
         ref={blurDropLeftRef}
-        className={`absolute -left-28 top-0 ${blurDropLeftInView ? 'animate-circularMotionLeft fadeIn' : 'opacity-0'}`}
+        className={`absolute -left-28 top-0 ${blurDropLeftInView ? 'animate-circularMotionLeft ' : 'opacity-0'}`}
       >
         <BlurDrop />
       </div>
       <div 
         ref={blurDropRightRef}
-        className={`absolute -right-28 top-0 ${blurDropRightInView ? 'animate-circularMotionRight fadeIn' : 'opacity-0'}`}
+        className={`absolute -right-28 top-0 ${blurDropRightInView ? 'animate-circularMotionRight ' : 'opacity-0'}`}
       >
         <BlurDrop />
       </div>
